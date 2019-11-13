@@ -1,6 +1,6 @@
 package spendeSystem;
 
-public class Aktion {
+public abstract class KonkreteAktion {
 
     private String name;
     private double spenden;
@@ -53,4 +53,6 @@ public class Aktion {
     public double getSpendenziel() {
         return spendenziel;
     }
+
+    public abstract String giveAktionTyp();
 }
